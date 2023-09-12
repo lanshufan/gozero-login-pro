@@ -1,0 +1,18 @@
+Name: server-api
+Host: 0.0.0.0
+Port: 8888
+
+Auth:
+  AccessSecret: zeroAccessKey
+  AccessExpire: 604800
+
+UserRpc:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: user.rpc
+
+Log:
+  ServiceName: server-api
+  Mode: file
+  KeepDays: 7
